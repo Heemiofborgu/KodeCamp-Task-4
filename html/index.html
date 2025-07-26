@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+
+        :root{
+            --dark-primary: #000;
+            --dark-secondary: #212529;
+            --gray: #ced4da;
+            --white: #fff;
+            --blue: #0d6efd;
+        }
+        .bg-dark{
+            background-color: var(--dark-secondary);
+        }
+        span{
+          color: var(--blue);
+        }
+        .grid-container{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .buttons{
+          display: flex;
+          gap: 1.2rem;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2rem;
+        }
+        .input-group{
+          width: 55%;
+          align-self: center;
+          justify-self: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4">
+      <!-- I used the fixed-top class in the nav tag to placed my nav bar at the top of the screen at all times. And a horizontal padding of 4 to placed my items properly -->
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-white" href="#">Borgu Web Services</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- The button toggle was exported from bootstrap to toggle my navigation on small screens -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white-50" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">FAQs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sign In/Sign Up
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./sing-in.html">Sign In</a></li>
+                <li><a class="dropdown-item" href="./sign-up.html">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+
+<section id="hero" class="hero-section bg-dark p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="mb-4 text-white text-center">Your destination for making standard websites for your businesses</h1>
+          <p class="lead mb-4 text-white-50 text-center">Quickly design and customize responsive mobile-first sites with Borgu Web Services, Nigeria's most awarded front-end developer</p>
+          <div class="buttons">
+            <a class="btn btn-primary btn-lg" href="#GetStarted" role="button">Get Started</a>
+            <button type="button" class="btn btn-outline-light btn-lg">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="features" class="features-section bg-light py-5">
+  <div class="container-fluid d-flex p-5">
+    <div class="row col-lg-5">
+      <h2 class="section-title">The best place for all web related services.</h2>
+    </div>
+    <div class="row grid-container">
+      <div class="col-sm-4">
+        <i class="fa-solid fa-globe fa-3x mb-3" style="color: var(--blue);"></i>
+        <!-- I used a blue color for my icons to improve readability on all screens -->
+        <h5>Web development</h5>
+        <p>We help design websites for brands from scratch.</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa-solid fa-blog fa-3x mb-3" style="color: var(--blue);"></i>
+        <h5>E-commerce sites</h5>
+        <p>We help design E-commerce sites for businesses to help them connect with customers.</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa-solid fa-network-wired fa-3x mb-3" style="color: var(--blue);"></i>
+        <h5>Web hosting</h5>
+        <p>We provide web hosting services to our clients.</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa-brands fa-searchengin fa-3x mb-3" style="color: var(--blue);"></i>
+        <h5>Search Engine Optimization</h5>
+        <p>We employ the best search SEO tools to better search reasults.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials bg-light">
+  <div class="container col-lg-8 d-flex flex-column align-items-center justify-content-center mt-5">
+    <div class="row">
+      <p class="lead text-center"><q>My company has gained more customers and revenue since i launched the website designed for me and hosted by the Borgu Web Services agency, a top professional branding agency. I got more than what i paid for</q></p>
+    </div>
+    <p class="h4">Abdulsamad Ahmad <span class=".blue">/</span> CEO, El-samad textiles</p>
+  </div>
+</section>
+
+<section id="contact" class="contact-us-page bg-light p-5">
+  <div class="container d-flex flex-column align-items-center justify-content-center bg-primary rounded w-75">
+    <h2 class="text-align-center text-white mt-5">New Products, delivered to you.</h2>
+    <p class="text-white-50">Sign up for our newsletter for the latest updates.</p>
+    <div class="row">
+      <form>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email adress...." aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-light" type="button" id="button-addon2">Subscribe</button>
+        </div>
+      </form>
+      <p class="text-white-50 text-center mb-4">We care about privacy, and will never share your data.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
